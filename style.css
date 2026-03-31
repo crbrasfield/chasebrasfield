@@ -13,9 +13,36 @@ body {
   font-family: Georgia, serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: normal;
   letter-spacing: 0.05em;
   color: #111;
+}
+
+.socials {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.socials a {
+  color: #111;
+  transition: color 0.2s;
+}
+
+.socials a:hover {
+  color: #555;
+}
+
+.socials svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
 }
