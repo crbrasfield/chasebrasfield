@@ -20,14 +20,6 @@ body {
     background-color: #111;
     color: #f0f0f0;
   }
-
-  .socials a {
-    color: #f0f0f0;
-  }
-
-  .socials a:hover {
-    color: #aaa;
-  }
 }
 
 .container {
@@ -49,12 +41,18 @@ h1 {
 }
 
 .socials a {
-  color: #111;
+  color: inherit;
   transition: color 0.2s;
 }
 
 .socials a:hover {
   color: #555;
+}
+
+@media (prefers-color-scheme: dark) {
+  .socials a:hover {
+    color: #aaa;
+  }
 }
 
 .socials svg {
