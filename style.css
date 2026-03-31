@@ -10,7 +10,24 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  color: #111;
   font-family: Georgia, serif;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color: #f0f0f0;
+  }
+
+  .socials a {
+    color: #f0f0f0;
+  }
+
+  .socials a:hover {
+    color: #aaa;
+  }
 }
 
 .container {
@@ -24,7 +41,6 @@ h1 {
   font-size: 2rem;
   font-weight: normal;
   letter-spacing: 0.05em;
-  color: #111;
 }
 
 .socials {
