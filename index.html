@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chase Brasfield</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <canvas id="shader-bg"></canvas>
   <div class="container">
     <h1>Chase Brasfield</h1>
     <div class="socials">
@@ -107,16 +111,6 @@
       </div>
       <div class="job">
         <div class="job-logo-wrap">
-          <img class="job-logo" src="assets/logos/theranest.png" alt="TheraNest">
-        </div>
-        <div class="job-content">
-          <div class="job-title">Front End Developer</div>
-          <div class="job-meta">TheraNest</div>
-          <div class="job-period">Jun 2016 – Jun 2018 · Greater Birmingham, AL</div>
-        </div>
-      </div>
-      <div class="job">
-        <div class="job-logo-wrap">
           <img class="job-logo" src="assets/logos/tealsk12.png" alt="TEALSK12">
         </div>
         <div class="job-content">
@@ -125,8 +119,19 @@
           <div class="job-period">Aug 2017 – May 2018 · Greater Birmingham, AL</div>
         </div>
       </div>
+      <div class="job">
+        <div class="job-logo-wrap">
+          <img class="job-logo" src="assets/logos/theranest.png" alt="TheraNest">
+        </div>
+        <div class="job-content">
+          <div class="job-title">Front End Developer</div>
+          <div class="job-meta">TheraNest · Full-time</div>
+          <div class="job-period">Jun 2016 – Jun 2018 · Greater Birmingham, AL</div>
+        </div>
+      </div>
     </section>
   </div>
+  <script src="shader.js"></script>
 </body>
 
 </html>

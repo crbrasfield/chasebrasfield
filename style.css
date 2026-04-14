@@ -4,22 +4,23 @@
   box-sizing: border-box;
 }
 
+#shader-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 4rem 1.5rem;
-  background-color: #fff;
-  color: #111;
-  font-family: Georgia, serif;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111;
-    color: #f0f0f0;
-  }
+  background-color: #000;
+  color: #fff;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .container {
@@ -29,12 +30,20 @@ body {
   gap: 1.5rem;
   width: 100%;
   max-width: 560px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 700;
   letter-spacing: 0.05em;
+  font-family: Montserrat, sans-serif;
 }
 
 .socials {
@@ -48,13 +57,7 @@ h1 {
 }
 
 .socials a:hover {
-  color: #555;
-}
-
-@media (prefers-color-scheme: dark) {
-  .socials a:hover {
-    color: #aaa;
-  }
+  color: #aaa;
 }
 
 .socials svg {
@@ -73,11 +76,11 @@ h1 {
   display: flex;
   gap: 1rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .work-history .job:first-child {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .job-logo-wrap {
@@ -91,9 +94,8 @@ h1 {
   height: 2.5rem;
   border-radius: 6px;
   object-fit: contain;
-  border: 1px solid #e8e8e8;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 
 .job-content {
   flex: 1;
@@ -113,59 +115,29 @@ h1 {
 
 .job-meta {
   font-size: 0.85rem;
-  color: #555;
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 0.15rem;
 }
 
 .job-period {
   font-size: 0.8rem;
-  color: #888;
+  color: rgba(255, 255, 255, 0.6);
   margin-top: 0.15rem;
 }
 
 .job-desc {
   font-size: 0.85rem;
-  color: #666;
+  color: #999;
   margin-top: 0.5rem;
   line-height: 1.5;
 }
 
 .job-sub {
   padding-left: 1rem;
-  border-left: 2px solid #ddd;
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
   margin-bottom: 0.6rem;
 }
 
 .job-sub:last-child {
   margin-bottom: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .job {
-    border-bottom-color: #333;
-  }
-
-  .work-history .job:first-child {
-    border-top-color: #333;
-  }
-
-  .job-logo {
-    border-color: #333;
-  }
-
-.job-meta {
-    color: #aaa;
-  }
-
-  .job-period {
-    color: #777;
-  }
-
-  .job-desc {
-    color: #999;
-  }
-
-  .job-sub {
-    border-left-color: #444;
-  }
 }
